@@ -1,0 +1,12 @@
+<?php
+$takeplace = $this->getTakeplaceCollection();
+$takeplaceViewUrl = Mage::getUrl('takeplace/index/view');
+?>
+<h1>Places</h1>
+<?php foreach ($takeplace as $item): ?>
+    <h2>
+        <a href="<?php echo $takeplaceViewUrl; ?>?id=<?php echo $item->getId(); ?>">
+            <?php echo $item->getTakeplace(); ?>
+        </a>
+    </h2>
+<?php endforeach; ?>

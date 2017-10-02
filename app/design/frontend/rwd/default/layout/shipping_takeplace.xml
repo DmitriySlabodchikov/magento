@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<layout>
+    <shippingtakeplace_index_index>
+        <reference name="content">
+            <block type="shippingtakeplace/takeplace" template="shipping_takeplace/index.phtml" />
+        </reference>
+    </shippingtakeplace_index_index>
+    <shippingtakeplace_index_view>
+        <reference name="content">
+            <block type="shippingtakeplace/view" name="takeplace.content" template="shipping_takeplace/view.phtml" />
+        </reference>
+    </shippingtakeplace_index_view>
+</layout>
